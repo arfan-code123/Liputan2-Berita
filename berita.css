@@ -1,0 +1,204 @@
+/* Reset margin dan font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+p {
+  margin: 0 0 16px 0;
+  line-height: 1.8;
+  text-align: justify;
+}
+/* Warna dasar dan background */
+body {
+  background-color: #f2f9f1;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header Utama */
+header {
+  background: linear-gradient(to right, #006400, #228B22);
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+  border-radius: 0 0 25px 25px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Judul Website */
+header h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+/* Navigasi */
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: #ffffff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+nav a:hover {
+  color: #ffe066;
+}
+
+/* Section Utama */
+section {
+  padding: 25px 15px;
+}
+
+/* Judul Section */
+section h2 {
+  color: #004d00;
+  background-color: #e6ffe6;
+  padding: 12px 18px;
+  font-size: 1.6em;
+  border-left: 6px solid #228B22;
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+
+/* Kartu Berita */
+.kartu-berita {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.kartu-berita:hover {
+  transform: scale(1.01);
+}
+
+section img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+.kartu-berita img section img{
+  max-width:100%;
+  height: auto;
+  display: block;
+  border-radius:10px;
+  margin: 0 auto 20px;
+}
+
+.kartu-berita h3 {
+  font-size: 1.2em;
+  padding: 15px 20px 5px;
+  color: #006400;
+}
+
+.kartu-berita p {
+  padding: 0 20px 15px;
+  font-size: 0.95em;
+  color: #444;
+}
+
+/* Link Baca Selengkapnya */
+.kartu-berita a {
+  display: block;
+  background-color: #006400;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 0 0 16px 16px;
+}
+
+.kartu-berita a:hover {
+  background-color: #228B22;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  background-color: #004d00;
+  color: #ffffff;
+  font-size: 1.2em;
+  margin-top: 40px;
+}
+
+#berita-terkait {
+  background-color: #e9fbe9;
+  padding: 25px;
+  border-top: 2px solid #ccc;
+  margin-top: 40px;
+}
+
+#berita-terkait h2 {
+  color: #006400;
+  margin-bottom: 20px;
+}
+
+.terkait-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.terkait-item {
+  background-color: #fff;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.terkait-item a {
+  text-decoration: none;
+  color: #004d00;
+}
+
+.terkait-item a:hover h3 {
+  color: #228B22;
+}
+
+#komentar {
+  background-color: #f9fff9;
+  padding: 20px;
+  margin-top: 40px;
+  border-top: 2px solid #228B22;
+}
+
+#komentar h3 {
+  color: #006400;
+  margin-bottom: 15px;
+}
+
+#form-komentar input,
+#form-komentar textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+#form-komentar button {
+  background-color: #006400;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#form-komentar button:hover {
+  background-color: #228B22;
+}
