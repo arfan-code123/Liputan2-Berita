@@ -35,6 +35,9 @@ header h1 {
 }
 
 /* Navigasi */
+.navigasi a {
+  font-size:1.2em
+}
 nav {
   margin-top: 1em;
   display: flex;
