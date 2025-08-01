@@ -5,20 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Liputan2 - Portal berita lokal, nasional, politik, dan daerah terbaru dari Desa Oihu dan sekitarnya.">
   <title>Liputan Berita</title>
-  <link rel="stylesheet" href="berita.css">
+  <link rel="stylesheet" href="berita.css"> <!-- Ganti sesuai nama file CSS kamu -->
 </head>
 <body>
-<main>
-  <!-- Header dan Navigasi -->
   <header>
+  <!-- Header dan Navigasi -->
     <h1>Liputan2</h1>
-    <nav>
+   <nav>
       <a href="index.html">Beranda</a>
       <a href="profil.html">Profil</a>
       <a href="kontak.html">Kontak</a>
     </nav>
   </header>
-
+  <main>
   <!-- Berita Utama / Terbaru -->
   <section id="berita-utama">
     <h2>Berita Terbaru</h2>
@@ -68,8 +67,8 @@
      <a href="daerah1.html"> Baca Selengkapnya</a>
      </article>
      </section>
-     
-     
+
+   </main>
     <!-- Form Komentar -->
   <form id="form-komentar">
   <label for="nama">Nama:</label><br>
@@ -83,10 +82,14 @@
   <div id="daftar-komentar"></div>
   
   <!-- Firebase SDK -->
-<script type="module">
+
+  <footer>
+    <p>&copy; 2025 Liputan2</p>
+   </footer>
+  
+  <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js";
   import { getDatabase, ref, push, onValue, remove } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-database.js";
-
   const firebaseConfig = {
     apiKey: "AIzaSyDwVlHJN83AshbVkqBK1aQqBurqtk98qoI",
     authDomain: "komentar-berita-6d9af.firebaseapp.com",
@@ -138,11 +141,7 @@
     } else {
       alert("Kode salah. Anda bukan admin.");
     }
-  };
+  }
 </script>
- </main>
-  <footer>
-    <p>&copy; 2025 Liputan2</p>
-  </footer>
 </body>
 </html>
