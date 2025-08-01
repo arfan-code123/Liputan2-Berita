@@ -14,8 +14,8 @@ p {
 body {
   background-color: #f2f9f1;
   color: #333;
-  line-height: 1.8l;
-  font-size: 16px;
+  line-height: 1.6;
+  
 }
 
 /* Header Utama */
@@ -30,28 +30,47 @@ header {
 
 /* Judul Website */
 header h1 {
-  font-size: 36px;
-  font-weight:bold;
-  margin-bottom: 20px;
+  font-size: 2em;
+  margin-bottom: 10px;
 }
 
 /* Navigasi */
 nav {
-  margin-top: 10px;
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5em;
+  text-align: center;
 }
 
 nav a {
   color: #ffffff;
-  margin: 0 15px;
+  margin: 0 1em;
   text-decoration: none;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 1.2em;
+  padding: 0.1em 0.3em;
+  display: inline-block;
 }
 
 nav a:hover {
   color: #ffe066;
 }
 
+@media (max-width:600px) {
+  nav {
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 0.5em;
+    align-items: center;
+}
+
+  nav a {
+    font-size: 1em;
+    padding: 0.1em 0.3em;
+  }
+}
 /* Section Utama */
 section {
   padding: 25px 15px;
@@ -62,7 +81,7 @@ section h2 {
   color: #004d00;
   background-color: #e6ffe6;
   padding: 12px 18px;
-  font-size: 20px;
+  font-size: 1.6em;
   border-left: 6px solid #228B22;
   border-radius: 8px;
   margin-bottom: 25px;
@@ -105,7 +124,7 @@ section img {
 
 .kartu-berita p {
   padding: 0 20px 15px;
-  font-size: 0.95em;
+  font-size: 1em;
   color: #444;
 }
 
@@ -134,8 +153,8 @@ footer {
   padding: 20px;
   background-color: #004d00;
   color: #ffffff;
-  font-size: 16px;
-  margin-top: 40px;
+  font-size: 2em;
+  margin-top: 30px;
 }
 
 #berita-terkait {
@@ -161,6 +180,7 @@ footer {
   padding: 15px 20px;
   border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  font-size: 1em;
 }
 
 .terkait-item a {
@@ -176,7 +196,8 @@ footer {
   background-color: #f9fff9;
   padding: 20px;
   margin-top: 40px;
-  border-top: 2px solid #228B22;
+  border-top: 4px solid #228B22;
+  font-size: 1em;
 }
 
 #komentar h3 {
@@ -190,6 +211,7 @@ footer {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 6px;
+  font-size: 0.9em;
 }
 
 #form-komentar button {
@@ -199,6 +221,7 @@ footer {
   border: none;
   border-radius: 6px;
   cursor: pointer;
+  font-size: 0.9em;
 }
 
 #form-komentar button:hover {
