@@ -2,16 +2,22 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <title>Festival Budaya Desa Oihu</title>
-  <link rel="stylesheet" href="berita.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Liputan2 - Portal berita lokal, nasional, politik, dan daerah terbaru dari Desa Oihu dan sekitarnya.">
+  <title>Liputan Berita</title>
+  <link rel="stylesheet" href="berita.css"> <!-- Ganti sesuai nama file CSS kamu -->
 </head>
 <body>
   <header>
-   <h1>Liputan2</h1>
+  <!-- Header dan Navigasi -->
+    <h1>Liputan2</h1>
    <nav>
+      <div class="navigasi">
       <a href="index.html">Beranda</a>
       <a href="profil.html">Profil</a>
       <a href="kontak.html">Kontak</a>
+    </div>
+    </nav>
   </header>
   <main>
   <section>
@@ -51,6 +57,12 @@
   <h2>Berita Terkait</h2>
   <div class="terkait-container">
     <div class="terkait-item">
+      <a href="berita-iqro.html">
+       <h3>Pemberian Buku Iqro Untuk Remas Desa Oihu</h3>
+       <p>Pemberian dari Kepala Desa Oihu untuk Remas Oihu</p>
+       </a>
+       </div>
+    <div class="terkait-item">
       <a href="daerah1.html">
         <h3>Festival Budaya Desa Oihu</h3>
         <p>Rangkaian acara meriah yang digelar oleh masyarakat Oihu.</p>
@@ -74,14 +86,9 @@
         <p>Presiden Resmikan Digitalisasi Desa</p>
         </a>
         </div>
-    <div class="terkait-item">
-      <a href="berita-iqro.html">
-        <h3>Pemberian Buku Iqro Untuk Remas Desa Oihu</h3>
-        <p>Pemberian Buku Iqro Untuk Remas Desa Oihu</p>
-      </a>
-    </div>
-  
-      <!-- Form Komentar -->
+        
+   </main>
+    <!-- Form Komentar -->
   <form id="form-komentar">
   <label for="nama">Nama:</label><br>
   <input type="text" id="nama" required><br><br>
@@ -94,10 +101,14 @@
   <div id="daftar-komentar"></div>
   
   <!-- Firebase SDK -->
-<script type="module">
+
+  <footer>
+    <p>&copy; 2025 Liputan2</p>
+   </footer>
+  
+  <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js";
   import { getDatabase, ref, push, onValue, remove } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-database.js";
-
   const firebaseConfig = {
     apiKey: "AIzaSyDwVlHJN83AshbVkqBK1aQqBurqtk98qoI",
     authDomain: "komentar-berita-6d9af.firebaseapp.com",
@@ -149,11 +160,7 @@
     } else {
       alert("Kode salah. Anda bukan admin.");
     }
-  };
+  }
 </script>
-  </main>
-  <footer>
-    <p>&copy; 2025 Liputan2</p>
-  </footer>
 </body>
-</html>
+                                  </html>
