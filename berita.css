@@ -177,7 +177,11 @@ footer {
   flex-direction: column;
   gap: 20px;
 }
-
+.berita-terkait a:hover {
+  text-decoration:underline;
+  color:#007bff
+  
+}
 .terkait-item {
   background-color: #fff;
   padding: 15px 20px;
